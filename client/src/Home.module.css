@@ -1,0 +1,47 @@
+.card {
+  background-color: rgb(244, 244, 245);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+}
+.user {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(160, 192, 212);
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.comment {
+  background-color: rgb(201, 201, 201);
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.image {
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.image:hover {
+  width: 85%;
+  height: 85%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 28px;
+  transition: 0.5s;
+}
+
+.description {
+  font-family: "Vazir", sans-serif !important;
+}

@@ -1,11 +1,12 @@
-import "./App.css";
+import "./Css/App.css";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import Login from "./Login";
-import Home from "./Home";
-import Navigation from "./Navigation";
+import Login from "./Pages/Login";
+import Home from "./Pages/Home";
+import Navigation from "./Pages/Navigation";
 import { LoginContext } from "./Contexts/LoginContext";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Addcars from "./Pages/Addcars";
 
 function App() {
   const [user, setUser] = useState({});
@@ -23,6 +24,9 @@ function App() {
           <Switch>
             <Route path="/" exact>
               <Home />
+            </Route>
+            <Route path="/addcars" exact>
+              <Addcars />
             </Route>
             {user.userName !== "" ? (
               <Redirect to="/" />

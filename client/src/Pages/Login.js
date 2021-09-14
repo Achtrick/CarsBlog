@@ -1,6 +1,6 @@
-import classes from "./Home.module.css";
+import classes from "../Css/Home.module.css";
 import React, { useContext, useState } from "react";
-import { LoginContext } from "./Contexts/LoginContext";
+import { LoginContext } from "../Contexts/LoginContext";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 

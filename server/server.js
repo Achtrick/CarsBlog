@@ -8,6 +8,7 @@ const mongoose = require("mongoose");
 const carsModel = require("./models/cars");
 const usersModel = require("./models/users");
 var ObjectID = require("mongodb").ObjectID;
+
 mongoose.connect(
   "mongodb+srv://root:root@abnex.wkamj.mongodb.net/ABNEX?retryWrites=true&w=majority",
   {
@@ -22,7 +23,7 @@ app.listen(3001, () => {
 });
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["http://localhost:3000", "http://localhost:3001", "*"],
     methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
@@ -101,4 +102,25 @@ app.get("/api/getCars", (req, res) => {
       res.send(result);
     }
   });
+});
+
+app.post("/api/addcars", (req, res) => {
+  const carName = req.body.carName;
+  const carDescription = req.body.carDescription;
+  var car = {
+    name: carName,
+    descreption: carDescription,
+  };
+  car = new carsModel({
+    name: carName,
+    description: carDescription,
+    image: " ",
+  });
+  try {
+    car.save();
+    res.send("SUCCESS");
+  } catch (err) {
+    res.send("ERROR!");
+    console.log(err);
+  }
 });

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
-import { LoginContext } from "./Contexts/LoginContext";
+import { LoginContext } from "../Contexts/LoginContext";
 import axios from "axios";
-import classes from "./Home.module.css";
+import classes from "../Css/Home.module.css";
 
 function Home() {
   const { user } = useContext(LoginContext);

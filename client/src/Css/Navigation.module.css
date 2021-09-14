@@ -1,0 +1,66 @@
+.link {
+  color: black;
+  transition: 0.5s;
+}
+.link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.user {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(190, 190, 190);
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.btnlogin {
+  background: rgb(57, 51, 150);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 51, 150, 1) 0%,
+    rgba(9, 113, 121, 1) 48%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 8px;
+  margin: 10px;
+  border-radius: 10%;
+  text-shadow: black;
+  color: aliceblue;
+  border-width: 0px;
+}
+
+.btnlogout {
+  background: rgb(150, 51, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(150, 51, 51, 1) 0%,
+    rgba(188, 119, 44, 1) 49%,
+    rgba(204, 83, 228, 1) 100%
+  );
+  padding: 8px;
+  margin: 10px;
+  border-radius: 10%;
+  text-shadow: black;
+  color: aliceblue;
+  border-width: 0px;
+}
+
+.navLink {
+  padding: 8px;
+  margin: 8px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.navLink:hover {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(133, 133, 133);
+  text-shadow: white;
+  color: white;
+}
